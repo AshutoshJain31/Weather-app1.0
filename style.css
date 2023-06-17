@@ -1,0 +1,646 @@
+body{
+    background-image: url(./asserts/FireWatch-WeatherDesk-Pack-master/cloudy.jpg);
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+.nav{
+    display: flex;
+    justify-self: center;
+    border: none;
+}
+.nav>input{
+    border-radius:50px;
+    font-size: 20px;
+    border: none;
+    padding: 10px;
+    margin: 20px;
+    width: 700px;
+    align-items: center;
+}
+.nav>button{
+   background-color: rgb(25, 14, 237);
+   border-radius: 0 50px 50px 0;
+   border: none;
+   margin-top: 20px;
+   cursor: pointer;
+   height: 60px;
+   position: absolute;
+   margin-left: 450px;
+   height: 43px;
+   margin-bottom: 3px;
+}
+.nav>button>img{
+    height: 40px;
+}
+.dicription>h3{
+    color: white;
+    font-size: 20px;
+    margin: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.weather{
+    height: 350px;
+    width: 470px;
+    border-radius: 10px;
+    background-image: url(./asserts/FireWatch-WeatherDesk-Pack-master/cloudy.jpg);
+    background-size: cover;
+    margin-left: 20px;  
+    margin-bottom: 10px; 
+}
+.weather>:nth-child(1){
+    position: relative;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 15px;
+}
+.weather>:nth-child(2){
+    position: absolute;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0px 15px;
+    margin-top: -30px;
+}
+.weather>img{
+    position: absolute;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0px 15px;
+    width: 150px;
+    height: 150px;
+}
+.weather>:nth-child(3){
+    position: absolute;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0px 15px;
+    margin-top: 180px;
+}
+.weather>:nth-child(4){
+    position: absolute;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin:-20px 200px;
+    font-size: 90px;
+    font-weight: bold;
+}
+.weather>:nth-child(5){
+    position: absolute;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin:130px 200px;
+    font-size: 20px;
+    /* padding-right: 40px; */
+}
+.weather>:nth-child(6){
+    position: absolute;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin:110px 200px;
+    font-size: 20px;
+    font-weight: bold;
+}
+/* Location */
+.location{
+    display:inline-grid;
+    grid-template-columns: auto auto auto;
+    height: 300px;
+    width: 470px;
+    border-radius: 10px;
+    background: rgb(78, 86, 88,0.5);
+    margin-left: 20px;   
+    text-align: center;
+    
+}
+.location>p{
+    font-size: 20px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* Air Quality */
+.Air{
+    position:absolute;
+    height: 190px;
+    width: 235px;
+    border-radius: 10px;
+    /* border: #096bf3 solid 2px; */
+    background:rgb(78, 86, 88,0.5);
+    /* background-color: transparent; */
+    /* background-color: red; */
+    margin-left: 20px; 
+    text-align: center; 
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.Air>:nth-child(1){
+    font-size: 30px;
+}
+.Air>:nth-child(2){
+    font-size: 40px;
+}
+/* wind */
+.Wind{
+    position:absolute;
+    height: 190px;
+    width: 235px;
+    border-radius: 10px;
+    background: rgb(78, 86, 88,0.5);
+    margin-left: 30px; 
+    text-align: center; 
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: -190px;
+    margin-left: 250px;
+}
+.Wind>:nth-child(1){
+    font-size: 30px;
+}
+.Wind>:nth-child(2){
+    font-size: 40px;
+}
+/* Humidity */
+.Humidity{
+    position:absolute;
+    height: 190px;
+    width: 235px;
+    border-radius: 10px;
+    background:rgb(78, 86, 88,0.5);
+    text-align: center; 
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 10px;
+    margin-left: -250px;
+}
+.Humidity>:nth-child(1){
+    font-size: 30px;
+}
+.Humidity>:nth-child(2){
+    font-size: 40px;
+}
+/* Visibility */
+.Visibility{
+    position:absolute;
+    height: 190px;
+    width: 235px;
+    border-radius: 10px;
+    background:rgb(78, 86, 88,0.5);
+    text-align: center; 
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: -190px;
+    margin-left: 250px;
+}
+.Visibility>:nth-child(1){
+    font-size: 30px;
+}
+.Visibility>:nth-child(2){
+    font-size: 40px;
+}
+/* Pressure */
+.Pressure{
+    position:absolute;
+    height: 190px;
+    width: 235px;
+    border-radius: 10px;
+    background:rgb(78, 86, 88,0.5); 
+    text-align: center; 
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 10px;
+    margin-left: -250px;
+}
+.Pressure>:nth-child(1){
+    font-size: 30px;
+}
+.Pressure>:nth-child(2){
+    font-size: 40px;
+}
+/* Dew Point */
+.DewPoint{
+    position:absolute;
+    height: 190px;
+    width: 235px;
+    border-radius: 10px;
+    background:rgb(78, 86, 88,0.5); 
+    text-align: center; 
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: -190px;
+    margin-left: 250px;
+} 
+.DewPoint>:nth-child(1){
+    font-size: 30px;
+}
+.DewPoint>:nth-child(2){
+    font-size: 40px;
+}
+/* FUture Forecast */
+.Future_Forecast>p{
+    margin-left: -570px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+}
+/* Today */
+.Today{
+    position:absolute;
+    height: 190px;
+    width: 235px;
+    border-radius: 10px;
+    background:rgb(78, 86, 88,0.5);
+    text-align: center; 
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 10px;
+    margin-left: -250px;
+}
+.Today>:nth-child(1){
+     font-size: 30px;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     margin-top: 10px;
+}
+.Today>img{
+    height: 60px;
+    margin-left: -140px;
+    margin-top: 5px;
+}
+.Today>:nth-child(3){
+    position: absolute;
+     margin-top: -90px;
+     margin-left: 130px;
+     font-size: 30px;
+}
+.Today>:nth-child(4){
+    position: absolute;
+     margin-top: -30px;
+     margin-left: 130px;
+     font-size: 30px;
+}
+/* Tomorrow */
+.day1{
+    position:absolute;
+    height: 190px;
+    width: 235px;
+    border-radius: 10px;
+    background:rgb(78, 86, 88,0.5); 
+    text-align: center; 
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 10px;
+}
+.day1>:nth-child(1){
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 10px;
+}
+.day1>img{
+    height: 60px;
+    margin-left: -140px;
+    margin-top: 5px;
+}
+.day1>:nth-child(3){
+    position: absolute;
+     margin-top: -90px;
+     margin-left: 130px;
+     font-size: 30px;
+}
+.day1>:nth-child(4){
+    position: absolute;
+     margin-top: -30px;
+     margin-left: 130px;
+     font-size: 30px;
+}
+/* day 2 */
+.day2{
+    position:absolute;
+    height: 190px;
+    width: 235px;
+    border-radius: 10px;
+    background:rgb(78, 86, 88,0.5); 
+    text-align: center; 
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 210px;
+    margin-left: -250px;
+}
+.day2>:nth-child(1){
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 10px;
+}
+.day2>img{
+    height: 60px;
+    margin-left: -140px;
+    margin-top: 5px;
+}
+.day2>:nth-child(3){
+    position: absolute;
+     margin-top: -90px;
+     margin-left: 130px;
+     font-size: 30px;
+}
+.day2>:nth-child(4){
+    position: absolute;
+     margin-top: -30px;
+     margin-left: 130px;
+     font-size: 30px;
+}
+/*  day3  */
+.day3{
+    position:absolute;
+    height: 190px;
+    width: 235px;
+    border-radius: 10px;
+    background:rgb(78, 86, 88,0.5); 
+    text-align: center; 
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 210px;
+}
+.day3>:nth-child(1){
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 10px;
+}
+.day3>img{
+    height: 60px;
+    margin-left: -140px;
+    margin-top: 5px;
+}
+.day3>:nth-child(3){
+    position: absolute;
+     margin-top: -90px;
+     margin-left: 130px;
+     font-size: 30px;
+}
+.day3>:nth-child(4){
+    position: absolute;
+     margin-top: -30px;
+     margin-left: 130px;
+     font-size: 30px;
+}
+/* Day 4 */
+.day4{
+    position:absolute;
+    height: 190px;
+    width: 235px;
+    border-radius: 10px;
+    background:rgb(78, 86, 88,0.5);  
+    text-align: center; 
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 410px;
+    margin-left: -250px;
+}
+.day4>:nth-child(1){
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 10px;
+}
+.day4>img{
+    height: 60px;
+    margin-left: -140px;
+    margin-top: 5px;
+}
+.day4>:nth-child(3){
+    position: absolute;
+     margin-top: -90px;
+     margin-left: 130px;
+     font-size: 30px;
+}
+.day4>:nth-child(4){
+    position: absolute;
+     margin-top: -30px;
+     margin-left: 130px;
+     font-size: 30px;
+}
+/* Day 5 */
+.day5{
+    position:absolute;
+    height: 190px;
+    width: 235px;
+    border-radius: 10px;
+    background:rgb(78, 86, 88,0.5);  
+    text-align: center; 
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 410px;
+    /* margin-left: -10px; */
+}
+.day5>:nth-child(1){
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 10px;
+}
+.day5>img{
+    height: 60px;
+    margin-left: -140px;
+    margin-top: 5px;
+}
+.day5>:nth-child(3){
+    position: absolute;
+     margin-top: -90px;
+     margin-left: 130px;
+     font-size: 30px;
+}
+.day5>:nth-child(4){
+    position: absolute;
+     margin-top: -30px;
+     margin-left: 130px;
+     font-size: 30px;
+}
+@media screen and (min-width:768px) {
+    .nav{
+        display: flex;
+        justify-content: center;
+    }
+    .nav>button{
+        margin-left: 700px;
+    }
+    .weather{
+        height: 300px;
+        width: 700px;
+        border-radius: 10px;
+        background-image: url(./asserts/FireWatch-WeatherDesk-Pack-master/cloudy.jpg);
+        margin-left: 30px;   
+    }
+    .location{
+        height: 300px;
+        width: 700px;
+        border-radius: 10px;
+        margin-left: 30px; 
+    }
+    .Air{
+        height: 190px;
+        width: 345px;
+        margin-left: 30px;
+    }
+    .Wind{
+        height: 190px;
+        width: 345px;
+        margin-left: 360px;
+    }
+    .Humidity{
+        height: 190px;
+        width: 345px;
+        margin-left: -360px;
+        margin-top: 10px;
+    }
+    .Visibility{
+        height: 190px;
+        width: 345px;
+        margin-left: 360px;
+    }
+    .Pressure{
+        height: 190px;
+        width: 345px;
+        margin-left: -360px;
+    }
+    .DewPoint{
+        height: 190px;
+        width: 345px;
+        margin-left: 360px;
+    }
+    .Future_Forecast>P{
+        text-align: center;
+    } 
+    .Today{
+        height: 190px;
+        width: 345px;
+        margin-left: -360px 
+    }
+    .Today>:nth-child(2){
+        position:static;
+        height: 70px;
+   }
+   .Today>:nth-child(3){
+        margin-left: 230px;
+        font-size: 40px;
+   }
+   .Today>:nth-child(4){
+    margin-left: 230px;
+    font-size: 40px;
+}
+    .day1{
+        height: 190px;
+        width: 345px;
+    }
+    .day1>:nth-child(2){
+        position:static;
+        height: 70px;
+   }
+    .day1>:nth-child(3){
+        margin-left: 230px;
+        font-size: 40px;
+   }
+   .day1>:nth-child(4){
+    margin-left: 230px;
+    font-size: 40px;
+   }
+    .day2{
+        height: 190px;
+        width: 345px;
+        margin-left: -360px  
+    } 
+    .day2>:nth-child(2){
+        position:static;
+        height: 70px;
+   }
+    .day2>:nth-child(3){
+        margin-left: 230px;
+        font-size: 40px;
+   }
+   .day2>:nth-child(4){
+    margin-left: 230px;
+    font-size: 40px;
+   }
+    .day3{
+        height: 190px;
+        width: 345px;
+    }
+    .day3>:nth-child(2){
+        position:static;
+        height: 70px;
+   }
+    .day3>:nth-child(3){
+        margin-left: 230px;
+        font-size: 40px;
+   }
+   .day3>:nth-child(4){
+    margin-left: 230px;
+    font-size: 40px;
+   }
+    .day4{
+        height: 190px;
+        width: 345px;
+        margin-left: -360px 
+    }
+    .day4>:nth-child(2){
+        position:static;
+        height: 70px;
+   }
+    .day4>:nth-child(3){
+        margin-left: 230px;
+        font-size: 40px;
+   }
+   .day4>:nth-child(4){
+    margin-left: 230px;
+    font-size: 40px;
+   }
+    .day5{
+        height: 190px;
+        width: 345px;
+    }
+    .day5>:nth-child(2){
+        position:static;
+        height: 70px;
+   }
+    .day5>:nth-child(3){
+        margin-left: 230px;
+        font-size: 40px;
+   }
+   .day5>:nth-child(4){
+    margin-left: 230px;
+    font-size: 40px;
+   }
+}
+@media screen and (min-width:1024px) {
+    .weather{
+        background-image: url(./asserts/FireWatch-WeatherDesk-Pack-master/day-rain.jpg);
+    }
+    .location{
+        position: absolute;
+        height: 300px;
+        width: 700px;
+        margin-left: 750px; 
+        margin-top:-310px;
+    }
+    .Humidity{
+        margin-left: 360px;
+        margin-top: -190px;
+    }
+    .Pressure{
+        margin-left: -1080px;
+        margin-top: 10px;
+    }
+    .Future_Forecast{
+        text-align: center;
+    }
+    .day2{
+        margin-left: 360px;
+        margin-top: 10px;
+    }
+    .day3{
+        margin-left: 720px;
+        margin-top: 10px;
+    }
+    .day4{
+        margin-top: 220px; 
+    }
+    .day5{
+        margin-top: 220px; 
+    }
+}
